@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # What modules, in what order
-MODULES="weather volumebar wifi internet cpuload cputemp date time"
+MODULES="volume ram cpuload fanspeed cputemp battery date time"
 
 # Modules that require an active internet connection
-ONLINE_MODULES="weather internet"
+ONLINE_MODULES=""
 
 # Delay between showing the status bar
-DELAY="0.05"
+DELAY="1"
 
 # Where the custom modules are stored
-CUSTOM_DIR="/home/$USER/.config/dwmbar/modules/custom/"
+CUSTOM_DIR="/home/$USER/repos/dwmbar/modules/custom/"
 
 # Separator between modules
 SEPARATOR=" | "

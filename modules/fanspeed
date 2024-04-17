@@ -3,11 +3,11 @@
 # Prints the fan RPM
 # Depends on lm_sensors
 
-PREFIX=' '
+PREFIX=' '
 
 get_fan_speed()
 {
-    echo "$PREFIX$(sensors | grep fan1 | awk 'NR==1{print $2}') RPM"
+    echo "$PREFIX$(sensors | grep "Fan" | awk 'NR==1{print $3}') RPM"
 }
 
 get_fan_speed
